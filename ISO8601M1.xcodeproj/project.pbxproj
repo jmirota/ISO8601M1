@@ -10,6 +10,10 @@
 		8C236F042B21038F000081F1 /* ISO8601M1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C236EFB2B21038F000081F1 /* ISO8601M1.framework */; };
 		8C236F092B21038F000081F1 /* ISO8601M1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C236F082B21038F000081F1 /* ISO8601M1Tests.m */; };
 		8C236F0A2B21038F000081F1 /* ISO8601M1.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C236EFE2B21038F000081F1 /* ISO8601M1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C236F162B2103C6000081F1 /* ISO8601Serialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C236F142B2103C6000081F1 /* ISO8601Serialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C236F172B2103C6000081F1 /* ISO8601Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C236F152B2103C6000081F1 /* ISO8601Serialization.m */; };
+		8C236F1A2B21040A000081F1 /* NSDate+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C236F182B21040A000081F1 /* NSDate+ISO8601.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C236F1B2B21040A000081F1 /* NSDate+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C236F192B21040A000081F1 /* NSDate+ISO8601.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,10 @@
 		8C236EFE2B21038F000081F1 /* ISO8601M1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISO8601M1.h; sourceTree = "<group>"; };
 		8C236F032B21038F000081F1 /* ISO8601M1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISO8601M1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C236F082B21038F000081F1 /* ISO8601M1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISO8601M1Tests.m; sourceTree = "<group>"; };
+		8C236F142B2103C6000081F1 /* ISO8601Serialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISO8601Serialization.h; sourceTree = "<group>"; };
+		8C236F152B2103C6000081F1 /* ISO8601Serialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISO8601Serialization.m; sourceTree = "<group>"; };
+		8C236F182B21040A000081F1 /* NSDate+ISO8601.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ISO8601.h"; sourceTree = "<group>"; };
+		8C236F192B21040A000081F1 /* NSDate+ISO8601.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ISO8601.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +59,8 @@
 		8C236EF12B21038E000081F1 = {
 			isa = PBXGroup;
 			children = (
-				8C236EFD2B21038F000081F1 /* ISO8601M1 */,
+				8C236F132B2103AA000081F1 /* Sources */,
+				8C236EFD2B21038F000081F1 /* Support */,
 				8C236F072B21038F000081F1 /* ISO8601M1Tests */,
 				8C236EFC2B21038F000081F1 /* Products */,
 			);
@@ -66,12 +75,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8C236EFD2B21038F000081F1 /* ISO8601M1 */ = {
+		8C236EFD2B21038F000081F1 /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				8C236EFE2B21038F000081F1 /* ISO8601M1.h */,
 			);
-			path = ISO8601M1;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		8C236F072B21038F000081F1 /* ISO8601M1Tests */ = {
@@ -82,6 +91,17 @@
 			path = ISO8601M1Tests;
 			sourceTree = "<group>";
 		};
+		8C236F132B2103AA000081F1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8C236F142B2103C6000081F1 /* ISO8601Serialization.h */,
+				8C236F152B2103C6000081F1 /* ISO8601Serialization.m */,
+				8C236F182B21040A000081F1 /* NSDate+ISO8601.h */,
+				8C236F192B21040A000081F1 /* NSDate+ISO8601.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -89,6 +109,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C236F1A2B21040A000081F1 /* NSDate+ISO8601.h in Headers */,
+				8C236F162B2103C6000081F1 /* ISO8601Serialization.h in Headers */,
 				8C236F0A2B21038F000081F1 /* ISO8601M1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C236F172B2103C6000081F1 /* ISO8601Serialization.m in Sources */,
+				8C236F1B2B21040A000081F1 /* NSDate+ISO8601.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +371,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +401,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

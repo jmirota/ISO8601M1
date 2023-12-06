@@ -13,6 +13,7 @@ FOUNDATION_EXPORT double ISO8601M1VersionNumber;
 //! Project version string for ISO8601M1.
 FOUNDATION_EXPORT const unsigned char ISO8601M1VersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <ISO8601M1/PublicHeader.h>
+#import <ISO8601/ISO8601Serialization.h>
+#import <ISO8601/NSDate+ISO8601.h>
 
 
